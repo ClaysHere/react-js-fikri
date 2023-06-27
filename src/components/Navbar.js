@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerRef = useRef(null);
   const burgerRef = useRef(null);
@@ -57,10 +65,18 @@ const Navbar = () => {
           className={`${
             isMenuOpen ? "" : "hidden"
           } bg-black md:bg-transparent bg-opacity-60 md:gap-x-4 rounded-lg w-[200px] h-[200px] md:w-1/2 md:h-0 md:p-4 right-1 top-20 justify-evenly md:justify-end items-center flex flex-col md:flex-row text-white font-semibold text-xl md:gap-16 xl:gap-16 mb-4 md:mb-0 absolute md:flex md:static`}>
-          <li className={"nav-menu"}>HOME</li>
-          <li className={"nav-menu"}>ABOUT</li>
-          <li className={"nav-menu"}>CONTACT</li>
-          <li className={"nav-menu"}>HELP</li>
+          <li className={"nav-menu"} onClick={() => navigate("/")}>
+            HOME
+          </li>
+          <li className={"nav-menu"} onClick={() => navigate("/about")}>
+            ABOUT
+          </li>
+          <li className={"nav-menu"} onClick={() => navigate("/contact")}>
+            CONTACT
+          </li>
+          <li className={"nav-menu"} onClick={() => navigate("/help")}>
+            HELP
+          </li>
         </ul>
         <div
           id="burger"

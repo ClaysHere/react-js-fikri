@@ -23,7 +23,7 @@ const Form = () => {
         </label>
         <input
           className={
-            "rounded-lg mt-2 px-4 py-2 lg:row-start-2 lg:col-start-2 lg:col-span-2"
+            "text-black rounded-lg mt-2 px-4 py-2 lg:row-start-2 lg:col-start-2 lg:col-span-2"
           }
           type="text"
           id="f-name"
@@ -36,7 +36,7 @@ const Form = () => {
         </label>
         <input
           className={
-            "rounded-lg mt-2 px-4 py-2 lg:row-start-2 lg:col-start-5 lg:col-span-2"
+            "text-black rounded-lg mt-2 px-4 py-2 lg:row-start-2 lg:col-start-5 lg:col-span-2"
           }
           type="text"
           id="l-name"
@@ -49,9 +49,9 @@ const Form = () => {
         </label>
         <input
           className={
-            "rounded-lg mt-2 px-4 py-2 lg:row-start-3 lg:col-start-2 lg:col-span-2"
+            "text-black rounded-lg mt-2 px-4 py-2 lg:row-start-3 lg:col-start-2 lg:col-span-2"
           }
-          type="text"
+          type="email"
           id="email"
           placeholder="Enter your email"
         />
@@ -62,9 +62,9 @@ const Form = () => {
         </label>
         <input
           className={
-            "rounded-lg mt-2 px-4 py-2 lg:row-start-3 lg:col-start-5 lg:col-span-2"
+            "text-black rounded-lg mt-2 px-4 py-2 lg:row-start-3 lg:col-start-5 lg:col-span-2"
           }
-          type="text"
+          type="tel"
           id="phone"
           placeholder="Enter your phone number"
         />
@@ -74,7 +74,7 @@ const Form = () => {
           Message
         </label>
         <textarea
-          className={"lg:col-span-5 h-32 mt-2 rounded-lg py-2 px-4"}
+          className={"text-black lg:col-span-5 h-32 mt-2 rounded-lg py-2 px-4"}
           id="message"
           cols="30"
           rows="10"
