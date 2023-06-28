@@ -1,10 +1,9 @@
 import React from "react";
 import image from "../img/2957253.jpg";
-import Form from "../components/Form";
 
 const Home = () => {
   return (
-    <div className={"pt-8 flex flex-col justify-center items-center w-full"}>
+    <div className={"pt-8 flex flex-col items-center w-full h-[1000px]"}>
       <div
         className={
           "flex flex-col lg:flex-row justify-center items-center md:w-2/3 gap-y-4 xl:py-16"
@@ -18,7 +17,6 @@ const Home = () => {
           <img className={"w-[640px]"} src={image} alt="" />
         </div>
       </div>
-      <Form />
     </div>
   );
 };

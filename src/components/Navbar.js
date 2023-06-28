@@ -56,15 +56,15 @@ const Navbar = () => {
       <nav
         ref={headerRef}
         className={`flex w-full items-center justify-between bg-black px-4`}>
-        <span className="bg-gradient-to-r from-sky-300 via-green-300 to-yellow-300 bg-clip-text text-transparent font-bold text-4xl font-mono italic py-4 animate-pulse">
-          FIKRI
+        <span className="bg-gradient-to-r from-sky-300 to-green-300 via-yellow-300 bg-clip-text text-transparent font-bold text-3xl font-mono py-4">
+          muhammadfikri
         </span>
         <ul
           id="nav-menu"
           ref={menuRef}
           className={`${
             isMenuOpen ? "" : "hidden"
-          } bg-black md:bg-transparent bg-opacity-60 md:gap-x-4 rounded-lg w-[200px] h-[200px] md:w-1/2 md:h-0 md:p-4 right-1 top-20 justify-evenly md:justify-end items-center flex flex-col md:flex-row text-white font-semibold text-xl md:gap-16 xl:gap-16 mb-4 md:mb-0 absolute md:flex md:static`}>
+          } bg-black md:bg-transparent bg-opacity-70 md:gap-x-4 rounded-lg w-[200px] h-[200px] md:w-1/2 md:h-0 md:p-4 right-1 top-20 justify-evenly md:justify-end items-center flex flex-col md:flex-row text-white font-semibold text-xl md:gap-16 xl:gap-16 mb-4 md:mb-0 absolute md:flex md:static`}>
           <li className={"nav-menu"} onClick={() => navigate("/")}>
             HOME
           </li>
