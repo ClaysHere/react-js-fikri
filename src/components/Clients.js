@@ -29,34 +29,34 @@ const Clients = () => {
             href="https://www.google.com/"
             target="_blank"
             rel="noreferrer">
-            <img className={"w-32"} src={google} alt="" />
+            <img className={"w-32"} src={google} alt="google" />
           </a>
           <a
             className={
               "mx-4 max-w-[120px] py-4 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             }
-            href="https://www.google.com/"
+            href="https://www.gojek.com/id-id/"
             target="_blank"
             rel="noreferrer">
-            <img className={"w-32"} src={gojek} alt="" />
+            <img className={"w-32"} src={gojek} alt="gojek" />
           </a>
           <a
             className={
               "mx-4 max-w-[120px] py-4 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             }
-            href="https://www.google.com/"
+            href="https://www.tokopedia.com/"
             target="_blank"
             rel="noreferrer">
-            <img className={"w-32"} src={tokopedia} alt="" />
+            <img className={"w-32"} src={tokopedia} alt="tokopedia" />
           </a>
           <a
             className={
               "mx-4 max-w-[120px] py-4 opacity-60 grayscale duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             }
-            href="https://www.google.com/"
+            href="https://www.traveloka.com/en-id/"
             target="_blank"
             rel="noreferrer">
-            <img className={"w-32"} src={traveloka} alt="" />
+            <img className={"w-32"} src={traveloka} alt="traveloka" />
           </a>
         </div>
       </div>
