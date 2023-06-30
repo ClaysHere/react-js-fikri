@@ -69,7 +69,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <hr className={"w-[90%] mt-8 mb-4 bg-slate-400"} />
+        <hr className={"w-[90%] mt-8 mb-4 bg-slate-400 lg:w-[95%]"} />
         <p className={"px-8 text-slate-400 text-sm"}>
           Tiket Masuk Praktek 06 Juli 2023 |{" "}
           <span className={"text-teal-300"}>&copy; Fikri</span>
