@@ -7,7 +7,9 @@ const Home = () => {
   return (
     <>
       <div
-        className={"pt-20 lg:pt-8 flex flex-col items-center w-full shadow-lg"}>
+        className={
+          "pt-20 pb-16 md:pb-8 lg:pt-8 flex flex-col items-center w-full shadow-lg"
+        }>
         <div
           className={
             "container flex flex-col lg:flex-row justify-center items-center md:w-2/3 gap-y-4 xl:py-16"
