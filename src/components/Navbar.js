@@ -55,7 +55,7 @@ const Navbar = () => {
     <>
       <nav
         ref={headerRef}
-        className={`flex w-full items-center justify-between bg-black px-8 md:py-2`}>
+        className={`flex w-full items-center justify-between bg-black px-8 lg:px-20 md:py-2`}>
         <span
           className="font-bold py-4 text-white md:text-xl cursor-pointer"
           onClick={() => {
@@ -86,7 +86,7 @@ const Navbar = () => {
               navigate("/about");
               setIsMenuOpen(false);
             }}>
-            ABOUT ME
+            ABOUT
           </li>
           <li
             className={`nav-menu ${

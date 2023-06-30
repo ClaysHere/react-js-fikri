@@ -26,7 +26,9 @@ const Home = () => {
               <span className={"text-black font-bold"}>bukan!</span>
             </p>
             <button
-              className={"bg-teal-500 text-white px-4 py-2 rounded-3xl mt-4"}>
+              className={
+                "bg-teal-500 text-white px-4 py-2 rounded-3xl mt-4 hover:bg-teal-700"
+              }>
               Hubungi Saya
             </button>
           </div>

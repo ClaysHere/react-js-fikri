@@ -8,7 +8,7 @@ const Clients = () => {
     <>
       <div
         className={
-          "bg-slate-800 flex flex-col items-center py-16 px-8 shadow-lg"
+          "bg-slate-800 flex flex-col items-center py-16 md:py-24 px-8 shadow-lg"
         }>
         <p className={"text-teal-300 text-2xl mb-4 font-semibold"}>Clients</p>
         <h1

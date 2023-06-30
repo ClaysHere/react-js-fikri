@@ -10,12 +10,16 @@ const Form = () => {
         className={
           "container bg-slate-800 md:w-2/3 lg:w-2/3 text-white grid grid-cols-1 lg:grid-cols-6 lg:gap-4 px-4 py-4"
         }>
-        <h1
+        <div
           className={
             "lg:col-span-6 self-center text-center text-teal-300 font-semibold text-lg"
           }>
-          Contact Me
-        </h1>
+          <h1>Contact Me</h1>
+          <p className={"text-slate-300 text-base font-normal"}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            quam.
+          </p>
+        </div>
         <label
           className={"self-center mt-4 lg:mt-0 lg:row-start-2 lg:col-start-1"}
           htmlFor="f-name">
