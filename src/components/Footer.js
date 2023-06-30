@@ -15,7 +15,9 @@ const Footer = () => {
               Hubungi Saya
             </h2>
             <p className={"text-slate-400"}>muhammadfikri4402@gmail.com</p>
-            <p className={"text-slate-400"}>Jl. H.M. Said Gg. Demokrat No.25</p>
+            <p className={"text-slate-400 text-sm"}>
+              Jl. H.M. Said Gg. Demokrat No.25
+            </p>
             <p className={"text-slate-400"}>Medan</p>
           </div>
           <div className={"w-full md:w-1/2 lg:w-1/3 p-8"}>
