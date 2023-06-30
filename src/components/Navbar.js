@@ -55,8 +55,8 @@ const Navbar = () => {
     <>
       <nav
         ref={headerRef}
-        className={`flex w-full items-center justify-between bg-black px-4`}>
-        <span className="bg-gradient-to-r from-sky-300 to-green-300 via-yellow-300 bg-clip-text text-transparent font-bold text-3xl font-mono py-4">
+        className={`flex w-full items-center justify-between bg-slate-800 px-8 md:py-2`}>
+        <span className="font-bold py-4 text-white md:text-xl">
           muhammadfikri
         </span>
         <ul
@@ -64,24 +64,50 @@ const Navbar = () => {
           ref={menuRef}
           className={`${
             isMenuOpen ? "" : "hidden"
-          } bg-black md:bg-transparent bg-opacity-70 md:gap-x-4 rounded-lg w-[200px] h-[200px] md:w-1/2 md:h-0 md:p-4 right-1 top-20 justify-evenly md:justify-end items-center flex flex-col md:flex-row text-white font-semibold text-xl md:gap-16 xl:gap-16 mb-4 md:mb-0 absolute md:flex md:static`}>
-          <li className={"nav-menu"} onClick={() => navigate("/")}>
+          } bg-slate-800 lg:bg-transparent bg-opacity-70 lg:gap-x-4 rounded-lg w-[200px] h-[200px] lg:w-1/2 lg:h-0 lg:p-4 right-1 top-16 md:top-20 justify-evenly lg:justify-end items-center flex flex-col lg:flex-row text-white font-semibold text-xl lg:gap-16 xl:gap-16 lg:mb-0 absolute lg:flex lg:static`}>
+          <li
+            className={`nav-menu ${location.pathname === "/" ? "active" : ""}`}
+            onClick={() => {
+              navigate("/");
+              setIsMenuOpen(false);
+            }}>
             HOME
           </li>
-          <li className={"nav-menu"} onClick={() => navigate("/about")}>
-            ABOUT
+          <li
+            className={`nav-menu ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+            onClick={() => {
+              navigate("/about");
+              setIsMenuOpen(false);
+            }}>
+            ABOUT ME
           </li>
-          <li className={"nav-menu"} onClick={() => navigate("/contact")}>
+          <li
+            className={`nav-menu ${
+              location.pathname === "/portfolio" ? "active" : ""
+            }`}
+            onClick={() => {
+              navigate("/portfolio");
+              setIsMenuOpen(false);
+            }}>
+            PORTFOLIO
+          </li>
+          <li
+            className={`nav-menu ${
+              location.pathname === "/contact" ? "active" : ""
+            }`}
+            onClick={() => {
+              navigate("/contact");
+              setIsMenuOpen(false);
+            }}>
             CONTACT
-          </li>
-          <li className={"nav-menu"} onClick={() => navigate("/help")}>
-            HELP
           </li>
         </ul>
         <div
           id="burger"
           ref={burgerRef}
-          className={`${isMenuOpen ? "burger-active" : ""} md:hidden`}
+          className={`${isMenuOpen ? "burger-active" : ""} lg:hidden`}
           onClick={handleBurgerClick}>
           <span className={"burger-line origin-top-left"}></span>
           <span className={"burger-line"}></span>

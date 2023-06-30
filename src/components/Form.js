@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div
       className={
-        "w-full flex justify-center items-center bg-slate-800 lg:mt-8 mt-8"
+        "w-full flex justify-center items-center bg-slate-800 lg:mt-8 mt-8 border-b-2 py-16"
       }>
       <div
         className={
@@ -12,7 +12,7 @@ const Form = () => {
         }>
         <h1
           className={
-            "lg:col-span-6 self-center text-center font-semibold text-lg"
+            "lg:col-span-6 self-center text-center text-teal-300 font-semibold text-lg"
           }>
           Contact Me
         </h1>

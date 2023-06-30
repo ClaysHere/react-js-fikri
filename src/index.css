@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.active {
+  @apply text-teal-300;
+}
+
 .nav-menu {
-  @apply hover:scale-110 transition duration-300 after:transition after:duration-300 flex flex-col after:border-b-4 after:opacity-0 hover:after:opacity-100 ease-in-out after:ease-in-out cursor-pointer;
+  @apply text-lg md:text-xl hover:scale-110 transition duration-300 after:transition after:duration-300 flex flex-col after:border-b-4 after:scale-x-0 hover:text-teal-300 hover:after:border-teal-300 hover:after:scale-x-75 font-semibold ease-in-out after:ease-in-out cursor-pointer;
 }
 
 .nav-fix {
