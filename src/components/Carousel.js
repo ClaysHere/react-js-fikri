@@ -69,7 +69,7 @@ const Carousel = () => {
         el: ".swiper-scrollbar",
       },
       autoplay: {
-        delay: 4000,
+        delay: 3000,
         disableOnInteraction: false,
       },
     });
@@ -99,6 +99,14 @@ const Carousel = () => {
             </p>
             <p className={`swiper-thin mt-8 font-semibold text-xl ${item.col}`}>
               {item.text2}
+            </p>
+            <p
+              className={`swiper-thin mt-8 font-semibold text-xl ${item.col} hidden lg:block`}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+              assumenda error adipisci debitis deleniti eligendi eos excepturi
+              harum dolor ipsum reprehenderit est iste repudiandae modi iure
+              consequatur laudantium, qui amet mollitia dolore! Dolores,
+              incidunt nobis voluptatum reiciendis aliquam laudantium sunt!
             </p>
           </div>
           <div className={"flex-1 rounded-lg overflow-hidden mb-4"}>
