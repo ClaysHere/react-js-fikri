@@ -55,7 +55,7 @@ const Navbar = () => {
     <>
       <nav
         ref={headerRef}
-        className={`flex w-full items-center justify-between bg-black px-8 lg:px-20 md:py-2`}>
+        className={`flex w-full items-center justify-between bg-black px-8 lg:px-20 md:py-2 z-[9999999999]`}>
         <span
           className="font-bold py-4 text-white md:text-xl cursor-pointer"
           onClick={() => {
@@ -69,7 +69,7 @@ const Navbar = () => {
           ref={menuRef}
           className={`${
             isMenuOpen ? "" : "hidden"
-          } bg-black lg:bg-transparent bg-opacity-70 lg:gap-x-4 rounded-lg w-[200px] h-[200px] lg:w-1/2 lg:h-0 lg:p-4 right-1 top-16 md:top-20 justify-evenly lg:justify-end items-center flex flex-col lg:flex-row text-white font-semibold text-xl lg:gap-16 xl:gap-16 lg:mb-0 absolute lg:flex lg:static`}>
+          } bg-black lg:bg-transparent bg-opacity-70 lg:gap-x-4 rounded-lg w-[200px] h-[200px] lg:w-1/2 lg:h-0 lg:p-4 right-1 top-16 md:top-20 justify-evenly lg:justify-end items-center flex flex-col lg:flex-row text-white font-semibold text-xl lg:gap-16 xl:gap-16 lg:mb-0 absolute lg:flex lg:static z-[99999]`}>
           <li
             className={`nav-menu ${location.pathname === "/" ? "active" : ""}`}
             onClick={() => {

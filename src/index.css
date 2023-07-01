@@ -50,3 +50,9 @@ body {
 .swiper-wrapper {
   @apply flex justify-between items-end;
 }
+
+/* CSS tambahan */
+.text-transparan {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
