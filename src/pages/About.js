@@ -1,7 +1,5 @@
 import Sosmed from "../components/Sosmed";
-import logoR from "../img/R.png";
-import logoRR from "../img/RR.png";
-import logoT from "../img/T.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..

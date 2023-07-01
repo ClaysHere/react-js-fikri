@@ -5,9 +5,10 @@ import { BsTwitter } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import { AiOutlineGitlab } from "react-icons/ai";
 
-const Sosmed = () => {
+const Sosmed = (props) => {
+  const styles = props.text ? props.text : "text-2xl";
   return (
-    <div className={"text-slate-400 flex gap-4 text-2xl items-center"}>
+    <div className={`text-slate-400 flex gap-4 items-center ${styles}`}>
       <a
         href="https://www.instagram.com/mhd.fikri4402/"
         target="_blank"

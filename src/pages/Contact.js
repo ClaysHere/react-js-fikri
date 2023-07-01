@@ -1,6 +1,7 @@
 import Form from "../components/Form";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Sosmed from "../components/Sosmed";
 // ..
 AOS.init({
   // Global settings:
@@ -34,9 +35,12 @@ const Contact = () => {
       data-aos-mirror="true"
       data-aos-once="true"
       data-aos-anchor-placement="top-center">
-      <div className={"p-10 font-semibold"}>
-        <h1 className={"text-4xl mb-4 font-bold"}>Contact</h1>
-        <p className={"text-3xl"}>Coming Soon!</p>
+      <div className={"p-10 font-semibold flex flex-col items-center"}>
+        <h1 className={"text-4xl mb-4 font-bold"}>Get in touch</h1>
+        <p className={"text-xl lg:text-3xl mb-8 text-center"}>
+          Ikuti dan hubungi saya di beberapa media sosial berikut.
+        </p>
+        <Sosmed text="text-4xl lg:text-6xl" />
       </div>
       <Form />
     </div>
