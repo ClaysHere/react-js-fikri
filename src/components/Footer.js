@@ -20,7 +20,7 @@ const Footer = () => {
             </h2>
             <p className={"text-slate-400"}>muhammadfikri4402@gmail.com</p>
             <p className={"text-slate-400 text-sm"}>
-              Jl. H.M. Said Gg. Demokrat No.25
+              Jl. Rahasia Gg. Secret No. Undefined
             </p>
             <p className={"text-slate-400"}>Medan</p>
           </div>
