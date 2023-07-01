@@ -15,15 +15,6 @@ AOS.init({
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: "ease", // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
 const About = () => {
@@ -37,7 +28,7 @@ const About = () => {
       data-aos-mirror="true"
       data-aos-once="true"
       data-aos-anchor-placement="top-center">
-      <div className={"px-8 p-16 shadow-lg"}>
+      <div className={"px-8 lg:px-20 p-16 shadow-lg"}>
         <p className={"text-teal-500 font-bold text-lg lg:text-2xl mb-4"}>
           TENTANG SAYA
         </p>
@@ -47,8 +38,8 @@ const About = () => {
               Mari tingkatkan skill di bidang Informatika!
             </h1>
             <p className={"text-slate-500"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur laboriosam quia et incidunt obcaecati quo.
+              Saya merupakan seorang mahasiswa semester 2 jurusan Teknik
+              Informatika di Universitas Mikroskil Medan.
             </p>
           </div>
           <div>
@@ -56,9 +47,8 @@ const About = () => {
               Follow Me
             </h1>
             <p className={"text-slate-500"}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut velit
-              quam totam et deleniti inventore tempore veniam cupiditate
-              dignissimos vero.
+              Untuk mengenal lebih jauh tentang saya, kunjungi beberapa akun
+              media soaial saya berikut ini.
             </p>
             <div className={"mt-8"}>
               <Sosmed />
@@ -73,50 +63,126 @@ const About = () => {
           </h1>
           <p
             className={
-              "mt-4 font-semibold text-xl text-slate-600 mb-4 md:w-2/3"
+              "mt-4 font-semibold text-xl text-slate-600 mb-8 md:w-2/3 lg:text-center"
             }>
             Website ini dibangun secara responsif dengan menggunakan beberapa
             framework dan library.
           </p>
-          <ul>
-            <li className={"mb-8"}>
-              <a href="https://react.dev/" target="_blank" rel="noreferrer">
-                <span className={"text-sky-400 font-bold"}>React</span>{" "}
+          <ul className={"lg:text-4xl grid grid-cols-1 md:grid-cols-2"}>
+            <li
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              className={"mb-8 md:row-start-1 md:col-start-1"}>
+              <a
+                className={"font-bold text-[#383838]"}
+                href="https://react.dev/"
+                target="_blank"
+                rel="noreferrer">
+                <span className={"text-[#09d3f6] font-bold"}>React</span>{" "}
                 (Javascript Framework)
-                <img
-                  className={"w-[50px] animate-spin inline ml-4"}
-                  src={logoR}
-                  alt="react-logo"
-                />
               </a>
             </li>
-            <li className={"mb-8"}>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              className={"mb-8 md:row-start-2 md:col-start-2"}>
               <a
+                className={"font-bold text-[#383838]"}
                 href="https://tailwindcss.com/"
                 target="_blank"
                 rel="noreferrer">
-                <span className={"text-sky-400 font-bold"}>Tailwind</span> (CSS
-                Framework)
-                <img
-                  className={"w-[50px] animate-pulse inline ml-4"}
-                  src={logoT}
-                  alt="tailwind-logo"
-                />
+                <span className={"text-[#0fb2d0] font-bold"}>Tailwind</span>{" "}
+                (CSS Framework)
               </a>
             </li>
-            <li className={""}>
+            <li
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              className={"mb-8 md:row-start-3 md:col-start-1"}>
               <a
-                className={"font-bold"}
+                className={"font-bold text-[#383838]"}
+                href="https://michalsnik.github.io/aos/"
+                target="_blank"
+                rel="noreferrer">
+                <span className={"text-[#323961] font-bold"}>
+                  Animate On Scroll
+                </span>{" "}
+                (Javascript Library)
+              </a>
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              className={"mb-8 md:row-start-4 md:col-start-2"}>
+              <a
+                className={"font-bold text-[#383838]"}
+                href="https://swiperjs.com/"
+                target="_blank"
+                rel="noreferrer">
+                <span className={"text-[#0880f7] font-bold"}>Swiper</span>{" "}
+                (Javascript Libary)
+              </a>
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              className={"mb-8 md:row-start-5 md:col-start-1"}>
+              <a
+                className={"font-bold text-[#383838]"}
+                href="https://react-icons.github.io/react-icons/search"
+                target="_blank"
+                rel="noreferrer">
+                <span className={"text-[#e91e63] font-bold"}>React Icons</span>{" "}
+                (Javascript Libary)
+              </a>
+            </li>
+            <li
+              data-aos="fade-left"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              className={"md:row-start-6 md:col-start-2"}>
+              <a
+                className={"font-bold text-[#383838]"}
                 href="https://reactrouter.com/en/main"
                 target="_blank"
                 rel="noreferrer">
-                React <span className={"text-red-600"}>Router</span>(React
+                React <span className={"text-[#f44250]"}>Router</span>(React
                 Library)
-                <img
-                  className={"w-[50px] animate-bounce inline ml-4"}
-                  src={logoRR}
-                  alt="tailwind-logo"
-                />
               </a>
             </li>
           </ul>

@@ -14,10 +14,9 @@ const Form = () => {
           className={
             "lg:col-span-6 self-center text-center text-teal-300 font-semibold text-lg"
           }>
-          <h1>Contact Me</h1>
+          <h1 className={"text-2xl font-bold"}>Contact Me</h1>
           <p className={"text-slate-300 text-base font-normal"}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            quam.
+            Hubungi saya melalui form dibawah ini.
           </p>
         </div>
         <label

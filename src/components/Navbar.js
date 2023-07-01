@@ -78,16 +78,7 @@ const Navbar = () => {
             }}>
             HOME
           </li>
-          <li
-            className={`nav-menu ${
-              location.pathname === "/about" ? "active" : ""
-            }`}
-            onClick={() => {
-              navigate("/about");
-              setIsMenuOpen(false);
-            }}>
-            ABOUT
-          </li>
+
           <li
             className={`nav-menu ${
               location.pathname === "/portfolio" ? "active" : ""
@@ -97,6 +88,16 @@ const Navbar = () => {
               setIsMenuOpen(false);
             }}>
             PORTFOLIO
+          </li>
+          <li
+            className={`nav-menu ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+            onClick={() => {
+              navigate("/about");
+              setIsMenuOpen(false);
+            }}>
+            ABOUT
           </li>
           <li
             className={`nav-menu ${
