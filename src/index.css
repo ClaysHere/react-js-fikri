@@ -34,3 +34,19 @@ body {
 .burger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+.swiper {
+  @apply w-full;
+}
+
+.swiper-bold {
+  @apply text-[30px] leading-[36px];
+}
+
+.swiper-thin {
+  @apply text-[16px] leading-[24px];
+}
+
+.swiper-wrapper {
+  @apply flex justify-between items-end;
+}
