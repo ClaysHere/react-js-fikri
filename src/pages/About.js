@@ -142,7 +142,7 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer">
                 <span className={"text-[#0880f7] font-bold"}>Swiper</span>{" "}
-                (Javascript Libary)
+                (Javascript Library)
               </a>
             </li>
             <li
@@ -161,7 +161,7 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer">
                 <span className={"text-[#e91e63] font-bold"}>React Icons</span>{" "}
-                (Javascript Libary)
+                (React Library)
               </a>
             </li>
             <li
