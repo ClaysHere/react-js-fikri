@@ -28,13 +28,13 @@ const Sosmed = (props) => {
         <BsTwitter className={"hover:text-blue-400"} />
       </a>
       <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-        <BsYoutube className={"hover:text-orange-500"} />
+        <BsYoutube className={"hover:text-red-500"} />
       </a>
       <a
         href="https://gitlab.com/muhammadfikri4402"
         target="_blank"
         rel="noreferrer">
-        <AiOutlineGitlab className={"hover:text-red-500"} />
+        <AiOutlineGitlab className={"hover:text-orange-500"} />
       </a>
     </div>
   );
